@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Affiliate AI Starter — Sina x DataPinter | Free Training Sampai Jadi</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#FFF8F9;color:#1A1A1E;line-height:1.6}
+a{text-decoration:none}
+.container{max-width:720px;margin:0 auto;padding:0 20px}
+.hero{background:linear-gradient(135deg,#FF6B9D 0%,#8E44AD 50%,#00D2FF 100%);color:white;padding:48px 20px 56px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:200px;height:200px;background:rgba(255,255,255,.15);border-radius:50%;filter:blur(20px)}
+.hero::after{content:"";position:absolute;bottom:-60px;left:-60px;width:260px;height:260px;background:rgba(255,255,255,.12);border-radius:50%;filter:blur(30px)}
+.badge{display:inline-block;background:rgba(255,255,255,.2);backdrop-filter:blur(10px);padding:8px 16px;border-radius:24px;font-size:12px;font-weight:800;letter-spacing:.6px;margin-bottom:16px;border:1px solid rgba(255,255,255,.3)}
+.hero h1{font-size:32px;font-weight:900;line-height:1.15;margin-bottom:12px;position:relative}
+.hero h1 span{background:white;color:#FF6B9D;padding:2px 10px;border-radius:10px;transform:rotate(-1deg);display:inline-block}
+.hero p{font-size:15px;opacity:.95;max-width:560px;margin:0 auto 22px;position:relative}
+.cta{display:inline-block;background:white;color:#FF6B9D;padding:16px 28px;border-radius:28px;font-weight:900;font-size:16px;box-shadow:0 10px 24px rgba(0,0,0,.15);position:relative}
+.cta small{display:block;font-weight:600;font-size:11px;opacity:.7;margin-top:2px}
+.stats{display:flex;gap:12px;justify-content:center;margin-top:18px;flex-wrap:wrap;position:relative}
+.stat{background:rgba(255,255,255,.18);backdrop-filter:blur(10px);padding:10px 14px;border-radius:16px;border:1px solid rgba(255,255,255,.25);min-width:110px}
+.stat b{display:block;font-size:18px}
+.stat span{font-size:11px;opacity:.9}
+.section{padding:32px 20px}
+.h2{font-size:20px;font-weight:900;margin-bottom:4px}
+.sub{font-size:13px;color:#8E8E93;margin-bottom:16px}
+.grid{display:grid;grid-template-columns:1fr;gap:14px}
+.card{background:white;border-radius:20px;padding:18px;box-shadow:0 6px 24px rgba(0,0,0,.06);border:2px solid #FFE0E9;position:relative}
+.card.free{border-color:#00D2FF;background:linear-gradient(135deg,#F0FFF9 0%,#E0F7FA 100%)}
+.card.bundle{border-color:#F9CA24;background:linear-gradient(135deg,#FFF9E6 0%,#FFF3E0 100%);transform:scale(1.02)}
+.card .ribbon{position:absolute;top:-10px;right:18px;background:#FF6B9D;color:white;padding:6px 12px;border-radius:12px;font-size:11px;font-weight:800;box-shadow:0 4px 12px rgba(255,107,157,.4)}
+.card .ribbon.blue{background:#00D2FF}
+.card .ribbon.yellow{background:#F9CA24;color:#5A3A00}
+.price{font-size:22px;font-weight:900;color:#FF6B9D;margin:8px 0}
+.price small{font-size:11px;color:#8E8E93;font-weight:600;text-decoration:line-through;margin-left:6px}
+.price.free{color:#00B894}
+.card ul{list-style:none;padding:0;margin:10px 0}
+.card ul li{padding:6px 0 6px 24px;position:relative;font-size:13px}
+.card ul li::before{content:"✓";position:absolute;left:0;top:6px;width:18px;height:18px;background:#E8F5E9;color:#1B7A2E;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800}
+.card .btn{display:block;text-align:center;background:#FF6B9D;color:white;padding:14px;border-radius:16px;font-weight:800;margin-top:12px}
+.card.free .btn{background:#00D2FF}
+.card.bundle .btn{background:#FF6B9D}
+.img-card{border-radius:16px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.08);background:white}
+.img-card img{width:100%;height:auto;display:block}
+.img-card .cap{padding:12px 14px;font-size:12px;color:#636366;background:#FAFAFA;border-top:1px solid #F0F0F0}
+.steps{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.step{background:white;border-radius:16px;padding:16px;text-align:center;box-shadow:0 4px 16px rgba(0,0,0,.05);border:1px solid #F0F0F0}
+.step b{width:36px;height:36px;background:linear-gradient(135deg,#FF6B9D,#8E44AD);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 8px;font-size:14px}
+.step p{font-size:12px;color:#636366}
+.faq{background:#F8F8FF;border-radius:16px;padding:14px;margin-bottom:10px}
+.faq b{font-size:13px;display:block;margin-bottom:4px}
+.faq p{font-size:12px;color:#636366}
+.footer{background:#1A1A1E;color:#8E8E93;padding:28px 20px;text-align:center;font-size:11px}
+.footer a{color:#FF6B9D}
+@media(min-width:600px){.grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:repeat(4,1fr)}.hero h1{font-size:38px}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="container" style="position:relative">
+    <div class="badge">✨ GEN Z AFFILIATE STARTER • TANPA MUKA • TANPA MODAL GEDE</div>
+    <h1>Cuan Affiliate<br><span>Pakai AI</span> — Sat-Set!</h1>
+    <p>Riset produk laris 5 menit + bikin storyboard TikTok 3 menit — pakai <b>Sina</b> & <b>DataPinter Ripper</b>. Ebook high-res 300 DPI + <b>Free Training Sampai Jadi</b> bareng komunitas.</p>
+    <a class="cta" href="#paket">Gas Mulai Gratis →<small>Free Training + Grup Mentoring Sampai Jadi</small></a>
+    <div class="stats">
+      <div class="stat"><b>2 Ebook</b><span>33 + 32 hlm • 300 DPI</span></div>
+      <div class="stat"><b>300 DPI</b><span>Print-ready • Gen Z design</span></div>
+      <div class="stat"><b>Sampai Jadi</b><span>Mentoring, bukan cuma baca</span></div>
+    </div>
+  </div>
+</div>
+
+<div style="background:linear-gradient(135deg,#FFF0F5 0%,#F0F0FF 50%,#E0F7FA 100%);padding:36px 20px;border-top:4px solid #FF6B9D;border-bottom:4px solid #00D2FF">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:20px">
+      <div style="display:inline-block;background:linear-gradient(135deg,#FF6B9D,#8E44AD);color:white;padding:8px 18px;border-radius:24px;font-size:11px;font-weight:900;letter-spacing:.8px;box-shadow:0 4px 16px rgba(255,107,157,.3)">🔥 ALASAN KENAPA HARUS GAS SEKARANG</div>
+      <div class="h2" style="font-size:24px;margin-top:14px;line-height:1.2">Kenapa <span style="background:linear-gradient(135deg,#FF6B9D,#8E44AD);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Sekarang</span> Waktu Terbaik?<br>Bestie, Ini Golden Moment! 🚀</div>
+      <div class="sub" style="font-size:14px;max-width:560px;margin:8px auto 0;color:#5A2A3A">TikTok Shop & Shopee lagi <b style="color:#FF6B9D">bagi komisi gede</b> buat kreator baru. AI bikin kamu bisa <b>posting 10 konten/hari</b> — yang manual cuma 1-2. Ketinggalan? Nyesel!</div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+      <div style="background:white;border-radius:20px;padding:20px;box-shadow:0 8px 24px rgba(255,107,157,.12);border:2px solid #FFD6E0;position:relative;overflow:hidden">
+        <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#FF6B9D,#FF9A8B)"></div>
+        <div style="width:48px;height:48px;background:linear-gradient(135deg,#FF6B9D,#FF9A8B);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:10px;box-shadow:0 4px 12px rgba(255,107,157,.3)">🔍</div>
+        <div style="font-size:13px;font-weight:900;color:#FF6B9D;letter-spacing:.6px">ALASAN 1</div>
+        <div style="font-size:16px;font-weight:900;margin:2px 0 6px">Riset Sat-Set, Anti Boncos</div>
+        <div style="font-size:13px;color:#636366;line-height:1.5">Data <b>omset 30 hari, tren naik/turun, rating</b> keliatan jelas — jadi tau produk laris sebelum stok. Enggak tebak-tebakan, enggak boncos!</div>
+        <div style="margin-top:10px;background:#FFF5F7;padding:8px 10px;border-radius:10px;font-size:11px;color:#FF6B9D;font-weight:700">Manual 2 jam → AI 5 menit ⚡</div>
+      </div>
+      <div style="background:white;border-radius:20px;padding:20px;box-shadow:0 8px 24px rgba(0,210,255,.12);border:2px solid #B2EBF2;position:relative;overflow:hidden">
+        <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#00D2FF,#1ABC9C)"></div>
+        <div style="width:48px;height:48px;background:linear-gradient(135deg,#00D2FF,#1ABC9C);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:10px;box-shadow:0 4px 12px rgba(0,210,255,.3)">🎬</div>
+        <div style="font-size:13px;font-weight:900;color:#00B2D4;letter-spacing:.6px">ALASAN 2</div>
+        <div style="font-size:16px;font-weight:900;margin:2px 0 6px">Konten Relate, Bukan Jualan</div>
+        <div style="font-size:13px;color:#636366;line-height:1.5">Gen Z benci hard selling. Pola <b>Hook → Problem → Demo → CTA</b> 15 detik bikin viewers betah, bukan skip!</div>
+        <div style="margin-top:10px;background:#E0F7FA;padding:8px 10px;border-radius:10px;font-size:11px;color:#00B2D4;font-weight:700">1 ide → 3 variasi konten / minggu ✨</div>
+      </div>
+      <div style="background:white;border-radius:20px;padding:20px;box-shadow:0 8px 24px rgba(249,202,36,.12);border:2px solid #FFECB3;position:relative;overflow:hidden">
+        <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#F9CA24,#F0932B)"></div>
+        <div style="width:48px;height:48px;background:linear-gradient(135deg,#F9CA24,#F0932B);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:10px;box-shadow:0 4px 12px rgba(249,202,36,.3)">⚡</div>
+        <div style="font-size:13px;font-weight:900;color:#B77900;letter-spacing:.6px">ALASAN 3</div>
+        <div style="font-size:16px;font-weight:900;margin:2px 0 6px">Konsisten = Algoritma Sayang</div>
+        <div style="font-size:13px;color:#636366;line-height:1.5"><b>1 produk = 3 konten</b> tiap minggu. AI bikin storyboard sat-set, kamu tinggal syuting pakai HP — algoritma auto push!</div>
+        <div style="margin-top:10px;background:#FFF9E6;padding:8px 10px;border-radius:10px;font-size:11px;color:#B77900;font-weight:700">10 konten/hari? Bisa! (manual cuma 1-2)</div>
+      </div>
+      <div style="background:linear-gradient(135deg,#8E44AD,#FF6B9D);border-radius:20px;padding:20px;box-shadow:0 8px 24px rgba(142,68,173,.25);color:white;position:relative;overflow:hidden">
+        <div style="position:absolute;top:-20px;right:-20px;width:80px;height:80px;background:rgba(255,255,255,.15);border-radius:50%"></div>
+        <div style="width:48px;height:48px;background:rgba(255,255,255,.2);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:10px;backdrop-filter:blur(10px)">🤝</div>
+        <div style="font-size:13px;font-weight:900;letter-spacing:.6px;opacity:.9">ALASAN 4 — PALING PENTING</div>
+        <div style="font-size:16px;font-weight:900;margin:2px 0 6px">Sampai Jadi, Bukan Sampai Download</div>
+        <div style="font-size:13px;line-height:1.5;opacity:.95"><b>Grup mentoring + Q&A mingguan</b> — tanya kapan aja, dibimbing sampai first sale. Enggak jalan sendiri!</div>
+        <div style="margin-top:10px;background:rgba(255,255,255,.2);padding:8px 10px;border-radius:10px;font-size:11px;font-weight:700;backdrop-filter:blur(10px)">Gratis selamanya — janji! 💖</div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:18px;background:white;padding:14px;border-radius:16px;box-shadow:0 4px 16px rgba(0,0,0,.06);border:2px dashed #FFD6E0">
+      <div style="font-size:13px;font-weight:800;color:#FF6B9D">💡 Bestie, 70% pembeli Shopee cek konten affiliate dulu sebelum checkout — kalau konten kamu ada pas mereka cari, CUAN MASUK!</div>
+    </div>
+  </div>
+</div>
+
+<div class="section container" id="paket">
+  <div class="h2">Pilih Paketmu — Mulai Gratis Gak Pake Ribet 💸</div>
+  <div class="sub">Tanpa nama personal — dari <b>Sina Studio x DataPinter Lab</b> untuk komunitas</div>
+  <div class="grid">
+    <div class="card free">
+      <div class="ribbon blue">GRATIS</div>
+      <div style="font-size:12px;font-weight:800;color:#00B894;letter-spacing:.6px">FREE TRAINING SAMPAI JADI</div>
+      <div class="price free">Rp 0 <small>Selamanya</small></div>
+      <div style="font-size:13px;font-weight:700">AI Affiliate Starter Kit — 9 hlm</div>
+      <ul>
+        <li>3 pilar cuan + roadmap 7 hari first sale</li>
+        <li>Demo DataPinter 5 menit & Sina 3 menit</li>
+        <li>Grup mentoring + Live Q&A mingguan</li>
+        <li>Template .env & checklist riset</li>
+      </ul>
+      <a class="btn" href="https://drive.google.com/drive/folders/1ycjobyBXD88Kbq4dwZe0jsYALcWoZm7y" target="_blank">Download Gratis →</a>
+      <div style="text-align:center;font-size:11px;color:#8E8E93;margin-top:8px">Langsung download, langsung gas</div>
+    </div>
+
+    <div class="card">
+      <div style="font-size:12px;font-weight:800;color:#FF6B9D;letter-spacing:.6px">EBOOK SINA — STORYBOARD AI</div>
+      <div class="price">Rp 79.000 <small>Rp 99.000</small></div>
+      <div style="font-size:13px;font-weight:700">33 hlm • Node.js + OpenRouter • 300 DPI</div>
+      <ul>
+        <li>BAB 0 Dasar AI dari nol (Token, Prompt, API)</li>
+        <li>lib/ai.js, storyboard parser, audience & caption</li>
+        <li>server.mjs + index.html + deploy Vercel</li>
+        <li>Diagram arsitektur + UI + contoh output high-res</li>
+      </ul>
+      <a class="btn" href="https://drive.google.com/drive/folders/1ycjobyBXD88Kbq4dwZe0jsYALcWoZm7y" target="_blank">Ambil Sina →</a>
+    </div>
+
+    <div class="card">
+      <div style="font-size:12px;font-weight:800;color:#4472C4;letter-spacing:.6px">EBOOK DATAPINTER RIPPER</div>
+      <div class="price" style="color:#4472C4">Rp 39.000 <small>Rp 79.000</small></div>
+      <div style="font-size:13px;font-weight:700">32 hlm • Python Flask Playwright Gemini</div>
+      <ul>
+        <li>Browser automation 18/13 kolom, parse & analyze</li>
+        <li>Comparator dedup + scoring, Gemini 7 bab</li>
+        <li>Excel 4-sheet + grafik pie & bar</li>
+        <li>CLI + Web Dashboard + handle quota</li>
+      </ul>
+      <a class="btn" style="background:#4472C4" href="https://drive.google.com/drive/folders/1ycjobyBXD88Kbq4dwZe0jsYALcWoZm7y" target="_blank">Ambil DataPinter →</a>
+    </div>
+
+    <div class="card bundle">
+      <div class="ribbon yellow">PALING HEMAT</div>
+      <div style="font-size:12px;font-weight:800;color:#B77900;letter-spacing:.6px">BUNDLE HEMAT — BEST SELLER</div>
+      <div class="price">Rp 99.000 <small>Rp 158.000</small></div>
+      <div style="font-size:13px;font-weight:700">2 Full Ebook + Free Training + Update</div>
+      <ul>
+        <li>Hemat Rp 59rb (Sina 79 + DataPinter 39 = 118 → 99)</li>
+        <li>Semua kode + diagram 300 DPI + mentoring</li>
+        <li>Update seumur hidup kalau ada AI baru</li>
+        <li>Garansi sampai jadi — bukan sampai download</li>
+      </ul>
+      <a class="btn" href="https://drive.google.com/drive/folders/1ycjobyBXD88Kbq4dwZe0jsYALcWoZm7y" target="_blank">Ambil Bundle Hemat →</a>
+      <div style="text-align:center;font-size:11px;color:#8E8E93;margin-top:8px">Paling worth it — langsung gas 2 skill</div>
+    </div>
+  </div>
+</div>
+
+<div class="section container">
+  <div class="h2">Isi Ebook — Bukan Teori, Langsung Praktik ✨</div>
+  <div class="sub">Semua dari kode asli, high-res 3000×2000, Gen Z design — enak dibaca di HP</div>
+  <div class="grid">
+    <div class="img-card"><img src="ai_basics.png" alt="AI Basics"><div class="cap"><b>BAB 0 Dasar AI</b> — Token → Prompt → Completion + 4 kunci Prompt Engineering + alur API</div></div>
+    <div class="img-card"><img src="prompt_example.png" alt="Prompt"><div class="cap"><b>Spill Prompt Sina</b> — System vs User Prompt → output template rapi siap parse</div></div>
+    <div class="img-card"><img src="sina_arch.png" alt="Sina Arch"><div class="cap"><b>Arsitektur Sina</b> — Frontend → Server → lib → OpenRouter (split 2 part biar hemat token)</div></div>
+    <div class="img-card"><img src="sina_ui.png" alt="Sina UI"><div class="cap"><b>UI Sina</b> — Form produk + setting scene (3/4/5) + mode Quick AI / Custom</div></div>
+    <div class="img-card"><img src="sina_result.png" alt="Sina Result"><div class="cap"><b>Hasil Storyboard 4 Scene</b> — VO, on-screen text, SFX, durasi — siap syuting</div></div>
+    <div class="img-card"><img src="datapinter_arch.png" alt="DP Arch"><div class="cap"><b>Arsitektur DataPinter</b> — Flask + functions/jobs + 6 modul → Storage JSON</div></div>
+    <div class="img-card"><img src="datapinter_flow.png" alt="Flow"><div class="cap"><b>Alur Riset 8 Langkah</b> — Keyword → Browser → Parse → Compare → Excel</div></div>
+    <div class="img-card"><img src="excel_dashboard.png" alt="Excel"><div class="cap"><b>Excel Dashboard 4-Sheet</b> — Ringkasan, Detail, Standout, Grafik (pie & bar)</div></div>
+  </div>
+</div>
+
+<div class="section container">
+  <div class="h2">FAQ — Bestie Nanya, Kita Spill 💬</div>
+  <div class="faq"><b>Perlu jago coding?</b><p>Enggak. Ebook tulis langkah demi langkah dari 0 — copy-paste jalan. BAB 0 jelasin AI dari nol.</p></div>
+  <div class="faq"><b>Bedanya Sina & DataPinter?</b><p>Sina = bikin konten (storyboard). DataPinter = riset produk laris. Bundle = 2 skill lengkap.</p></div>
+  <div class="faq"><b>Free Training Sampai Jadi itu apa?</b><p>Ebook starter 9 hlm + grup mentoring + Q&A mingguan. Gratis selamanya, dibimbing sampai kamu bisa riset & bikin storyboard sendiri.</p></div>
+  <div class="faq"><b>Butuh modal?</b><p>HP + internet + API key gratis (OpenRouter/Gemini). DataPinter butuh akun berbayar — ada cara handle quota di ebook.</p></div>
+  <div class="faq"><b>Garansi?</b><p>Sampai jadi — bukan sampai download. Kalau stuck, tanya di grup, kita bantu sampai first sale.</p></div>
+</div>
+
+<div class="section container" style="text-align:center">
+  <div style="background:linear-gradient(135deg,#FF6B9D,#8E44AD);border-radius:20px;padding:24px;color:white">
+    <div style="font-size:18px;font-weight:900">Siap Cuan Pakai AI? Gas Sekarang! 🚀</div>
+    <div style="font-size:13px;opacity:.9;margin:8px 0 16px">Mulai gratis, upgrade pas udah ngerasain “oh ternyata bisa!” — enggak dipaksa.</div>
+    <a href="https://drive.google.com/drive/folders/1ycjobyBXD88Kbq4dwZe0jsYALcWoZm7y" target="_blank" style="display:inline-block;background:white;color:#FF6B9D;padding:14px 28px;border-radius:24px;font-weight:900;margin:6px">Mulai Gratis Dulu →</a>
+    <a href="https://drive.google.com/drive/folders/1ycjobyBXD88Kbq4dwZe0jsYALcWoZm7y" target="_blank" style="display:inline-block;background:#1A1A1E;color:white;padding:14px 28px;border-radius:24px;font-weight:900;margin:6px">Ambil Bundle 99rb →</a>
+    <div style="font-size:11px;opacity:.7;margin-top:12px">Sina Studio x DataPinter Lab • Tanpa nama personal • Update seumur hidup • lynk.id/bagasabdullah16</div>
+  </div>
+</div>
+
+<div class="footer">
+  <div>© 2026 Sina Studio x DataPinter Lab • Untuk edukasi — hormati ToS DataPinter & API provider • Bukan janji kaya instan, butuh praktik</div>
+  <div style="margin-top:6px">File lengkap ada di folder Drive di atas • Update seumur hidup</div>
+</div>
+
+</body>
+</html>
